@@ -15,4 +15,13 @@ function getSliderValue(){
     document.getElementById("rate_val").innerHTML = document.getElementById("rate").value;
 }
 
+function validateAmount() {
+    var principal = document.getElementById("principal").value;
+    var biggerThanZero = parseInt(principal) > 0;
+    if (!biggerThanZero) {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    }
+
+}
         
