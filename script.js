@@ -16,7 +16,7 @@ function getSliderValue(){
 }
 
 function validateAmount() {
-    var principal = document.getElementById("principal").value;
+    var biggerThanZero = document.getElementById("principal").value;
     var biggerThanZero = parseInt(principal) > 0;
     if (!biggerThanZero) {
         alert("Enter a positive number");
